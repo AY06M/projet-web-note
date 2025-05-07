@@ -4,26 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cssprojet.css">
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
     <title>To-Do List Emsi</title>
 </head>
 <body>
-    <div class="container">
+    
+    <div class="corp">
         <div class="todo-app">
-            <h2> To-Do List <img src="icon.png" ></h2>
+            <h2> To-Do List EMSI <img src="images/icon.png" ></h2>
             <div class="row">
                 <input type="text" id="input" placeholder="add your text">
-                <button>Add</button>
+                <button onclick="addtask()">Add</button>
             </div>
-            <ul id="list-container">  
-<li class="checked"> Task1</li>
-<li> Task2</li>
-<li> Task3</li>
-<li> Task4</li>
-
-            </ul>
+            <div id="task-counter">0/0 tâches complétées</div>
+            <ul id="list-corp">  
+         </ul>
         </div>
-
+        <div class="contact-form">
+            <h3>Contactez-moi</h3>
+            <form action="mailto:tonemail@example.com" method="post" enctype="text/plain">
+                <label for="nom">Nom :</label><br>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required><br><br>
+                
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email" placeholder="Votre email" required><br><br>
+                
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="4" placeholder="Votre message" required></textarea><br><br>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+        
     </div>
-   
+    
+    <footer>
+        <p id="f"> &copy; 2025 Aymen Ibnelhabib. Tous droits réservés. </p>
+</footer>
+<script src="script.js">    </script>
 </body>
 </html>
