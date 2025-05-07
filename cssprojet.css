@@ -4,10 +4,10 @@ padding: 0;
 font-family: 'Courier New', Courier, monospace;
 box-sizing: border-box;
 }
-.container{ 
+.corp{ 
  width: 100%;
 min-height: 100vh;
-background: linear-gradient(135deg, #7094dc,#564a58);
+background:linear-gradient(45deg, #ff6b6b, #4ecdc4);
 padding: 10px;
 }
 .todo-app{
@@ -16,7 +16,7 @@ max-width: 540px;
 background: #fff;
 margin: 100px auto 20px;
 padding: 40px 30px 70px ;
-border-radius: 10px;
+border-radius: 40px;
 }
 .todo-app h2{
     color: #002765;
@@ -33,7 +33,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 background: #edeef0;
-border-radius: 3%;
+border-radius: 40px;
 padding-left: 20px;
 margin-bottom: 25px;
 
@@ -73,7 +73,7 @@ position: absolute;
 height: 28px;
 width: 28px;
 border-radius: 50%;
-background-image: url(url(../images projet/unchecked.png));
+background-image: url(images/unchecked.png);
 background-size: cover;
 background-position:center;
 top: 12px;
@@ -84,5 +84,71 @@ ul li.checked{
     text-decoration: line-through;
 }
 ul li.checked::before{
-    background-image: url(C:\Users\HP 250 G8 NoteBook\Desktop\images projet\checked.png);
+    background-image: url(images/checked.png);
+}
+ul li span {
+position: absolute;
+right: 0;
+top:5px;
+width: 40px;
+height: 40px;
+font-size: 22px;
+color: #555;
+line-height: 40px;
+text-align: center;
+border-radius: 50%;
+
+}
+ul li span:hover{
+    background: #edeef0;
+}
+#task-counter {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+}
+#f{
+    text-align: center; 
+    padding: 10px; 
+    font-size: 14px;
+    font-style: oblique;
+}
+.contact-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contact-form h3 {
+    margin-bottom: 15px;
+    color: #002765;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.contact-form button {
+    background-color: #2e2aab;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #1c1980;
 }
